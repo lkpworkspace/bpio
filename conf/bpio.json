@@ -3,35 +3,68 @@
     "_func":{
         "open_file":{
             "_input":[
-                "bpbase.String",
-                "bpbase.String"
+                {
+                    "type":"bpbase.String",
+                    "name":"file path"
+                },
+                {
+                    "type":"bpbase.String",
+                    "name":"mode"
+                }
             ],
             "_output":[
-                "bpbase.Int"
+                {
+                    "type":"bpbase.Int",
+                    "name":"handle"
+                }
             ]
         },
         "read_file":{
             "_input":[
-                "bpbase.Int",
-                "bpbase.Int"
+                {
+                    "type":"bpbase.Int",
+                    "name":"handle"
+                },
+                {
+                    "type":"bpbase.Int",
+                    "name":"size"
+                }
             ],
             "_output":[
-                "bpbase.Int",
-                "bpbase.String"
+                {
+                    "type":"bpbase.Int",
+                    "name":"read size"
+                },
+                {
+                    "type":"bpbase.String",
+                    "name":"data"
+                }
             ]
         },
         "write_file":{
             "_input":[
-                "bpbase.Int",
-                "bpbase.String"
+                {
+                    "type":"bpbase.Int",
+                    "name":"handle"
+                },
+                {
+                    "type":"bpbase.String",
+                    "name":"data"
+                }
             ],
             "_output":[
-                "bpbase.Int"
+                {
+                    "type":"bpbase.Int",
+                    "name":"write size"
+                }
             ]
         },
         "close_file":{
             "_input":[
-                "bpbase.Int"
+                {
+                    "type":"bpbase.Int",
+                    "name":"handle"
+                }
             ],
             "_output":[]
         }
